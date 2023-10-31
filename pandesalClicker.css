@@ -1,0 +1,97 @@
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; /* Align child to the right */
+  align-items: center;
+}
+.game {
+  width: 800px; /* Set the width of the rectangle */
+  height: 900px; /* Set the height of the rectangle */
+  background-color: aqua;
+  display: flex;
+  position: relative;
+  outline: 2px solid black;
+}
+.hp-bar {
+  display: fixed;
+  align-self: center;
+  width: 200px; /* Set the width of the HP bar */
+  height: 20px; /* Set the height of the HP bar */
+  border: 2px solid #000; /* Add a border for the HP bar */
+  background-color: #ffffff; /* Set the background color for the HP bar */
+}
+
+.hp-fill {
+  height: 100%; /* Match the height of the HP bar */
+  background-color: rgb(
+    255,
+    0,
+    0
+  ); /* Set the fill color (green for full health) */
+  width: 50%; /* Initial width set to 100% for full health */
+  transition: width 0.5s; /* Add a smooth transition animation */
+}
+.whole-menu {
+  /* Center horizontally within the parent */
+  height: 80px;
+  width: 800px;
+  outline: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Set the height of the parent container */
+}
+.wood-text {
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #8b4513; /* Brown color for wood */
+  background: #d2b48c; /* Beige background color */
+  border: 2px solid #8b4513; /* Border color for the wood effect */
+  text-shadow: 2px 2px 2px #654321; /* Darker shadow for the wood grain */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inset shadow for depth */
+}
+.rectangle {
+  width: 300px; /* Set the width of the rectangle */
+  height: 100px; /* Set the height of the rectangle */
+  background-color: #3498db; /* Set the background color of the rectangle */
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, #f06, #ff4) 1;
+  border-image-slice: 1;
+  display: flex;
+  justify-content: flex-end; /* Align child to the right */
+  align-items: center; /* Vertically center the child */
+  padding: 5px;
+}
+.square {
+  width: 65px; /* Set the width of the rectangle */
+  height: 50px; /* Set the height of the rectangle */
+  background-color: #000000; /* Set the background color of the rectangle */
+  border: 2px solid #2980b9;
+}
+#menu-position {
+  display: flex;
+  position: fixed;
+  margin-top: 316px;
+}
+.menu {
+  width: 800px; /* Set the width of the rectangle */
+  height: 500px; /* Set the height of the rectangle */
+  background-color: #3498db; /* Set the background color of the rectangle */
+  display: flex;
+  justify-content: center; /* Align child to the right */
+  align-items: center; /* Vertically center the child */
+  outline: 2px solid black;
+}
+#buy-menu {
+  outline: 2px solid #000;
+  width: 400px; /* Set the width of the child rectangles */
+  height: 80px; /* Set the height of the child rectangles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
